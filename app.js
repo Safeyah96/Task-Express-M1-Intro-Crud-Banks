@@ -4,7 +4,7 @@ const PORT = 8000;
 const app = express();
 
 app.use(express.json());
-app.use(accountRouter);
+app.use("/api", accountRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
